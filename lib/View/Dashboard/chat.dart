@@ -175,7 +175,7 @@ class _ChatPage extends State<ChatPage> {
                   Text("That’s wonderful. I feel the same way as well. 😊"),
               trailing: CircleAvatar(
                 radius: 12,
-                backgroundColor: Colors.blue,
+                backgroundColor: Color(0xFFE8C468),
                 child: Text(
                   "2",
                   style: TextStyle(color: Colors.white, fontSize: 12),
@@ -313,7 +313,7 @@ class ChatDetailScreen extends StatelessWidget {
                     padding: EdgeInsets.all(12),
                     constraints: BoxConstraints(maxWidth: 250),
                     decoration: BoxDecoration(
-                      color: msg["isMe"] ? Colors.blue : Colors.grey[200],
+                      color: msg["isMe"] ? Color(0xFFD1B671) : Colors.grey[200],
                       borderRadius: BorderRadius.circular(16),
                     ),
                     child: Text(
@@ -334,7 +334,7 @@ class ChatDetailScreen extends StatelessWidget {
             child: Row(
               children: [
                 IconButton(
-                  icon: Icon(Icons.add_circle_outline, color: Colors.blue),
+                  icon: Icon(Icons.add_circle_outline, color: Color(0xFFE8C468)),
                   onPressed: () {},
                 ),
                 Expanded(
@@ -346,7 +346,7 @@ class ChatDetailScreen extends StatelessWidget {
                   ),
                 ),
                 IconButton(
-                  icon: Icon(Icons.send, color: Colors.blue),
+                  icon: Icon(Icons.send, color: Color(0xFFE8C468)),
                   onPressed: () {},
                 ),
               ],

@@ -98,7 +98,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
       appBar: AppBar(
         title: Text("Discover Matches"),
         centerTitle: true,
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Color(0xFFE8C468),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -170,13 +170,13 @@ class _DiscoverPageState extends State<DiscoverPage> {
                 children: [
                   FloatingActionButton(
                     heroTag: "dislike",
-                    backgroundColor: Colors.pinkAccent,
+                    backgroundColor: Colors.red,
                     child: Icon(Icons.close, size: 32),
                     onPressed: () => _nextProfile(liked: false),
                   ),
                   FloatingActionButton(
                     heroTag: "like",
-                    backgroundColor: Colors.teal,
+                    backgroundColor: Colors.green,
                     child: Icon(Icons.favorite, size: 32),
                     onPressed: () => _nextProfile(liked: true),
                   ),

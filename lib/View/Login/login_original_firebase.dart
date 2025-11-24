@@ -26,7 +26,7 @@ class _LoginOriginalFirebaseState extends State<LoginOriginalFirebase> {
 
   // Get the Firebase Auth Controller
   final FirebaseAuthController authController =
-      Get.put(FirebaseAuthController());
+  Get.put(FirebaseAuthController());
 
   // Firebase Web API Key
   final String _apiKey = "AIzaSyCfcn_q14Wc-AnYPshuJWHtAEzP_Jxf3Bo";
@@ -54,10 +54,10 @@ class _LoginOriginalFirebaseState extends State<LoginOriginalFirebase> {
       String url;
       if (_isRegistering) {
         url =
-            'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=$_apiKey';
+        'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=$_apiKey';
       } else {
         url =
-            'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=$_apiKey';
+        'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=$_apiKey';
       }
 
       final response = await http.post(
@@ -96,11 +96,11 @@ class _LoginOriginalFirebaseState extends State<LoginOriginalFirebase> {
           switch (errorCode) {
             case 'EMAIL_EXISTS':
               errorMessage =
-                  'This email is already registered. Please sign in instead.';
+              'This email is already registered. Please sign in instead.';
               break;
             case 'EMAIL_NOT_FOUND':
               errorMessage =
-                  'No user found with this email. Please register first.';
+              'No user found with this email. Please register first.';
               break;
             case 'INVALID_PASSWORD':
               errorMessage = 'Incorrect password. Please try again.';
@@ -130,7 +130,7 @@ class _LoginOriginalFirebaseState extends State<LoginOriginalFirebase> {
     } catch (e) {
       setState(() {
         _errorMessage =
-            'Network error. Please check your connection and try again.';
+        'Network error. Please check your connection and try again.';
         _isLoading = false;
       });
     }
@@ -340,13 +340,13 @@ class _LoginOriginalFirebaseState extends State<LoginOriginalFirebase> {
                         margin: EdgeInsets.only(bottom: 20),
                         decoration: BoxDecoration(
                           color: _errorMessage.contains('successful') ||
-                                  _errorMessage.contains('Welcome')
+                              _errorMessage.contains('Welcome')
                               ? Colors.green[50]
                               : Colors.red[50],
                           borderRadius: BorderRadius.circular(10),
                           border: Border.all(
                             color: _errorMessage.contains('successful') ||
-                                    _errorMessage.contains('Welcome')
+                                _errorMessage.contains('Welcome')
                                 ? Colors.green[200]!
                                 : Colors.red[200]!,
                           ),
@@ -355,7 +355,7 @@ class _LoginOriginalFirebaseState extends State<LoginOriginalFirebase> {
                           _errorMessage,
                           style: TextStyle(
                             color: _errorMessage.contains('successful') ||
-                                    _errorMessage.contains('Welcome')
+                                _errorMessage.contains('Welcome')
                                 ? Colors.green[800]
                                 : Colors.red[800],
                             fontSize: 13,
@@ -369,7 +369,7 @@ class _LoginOriginalFirebaseState extends State<LoginOriginalFirebase> {
                       height: 55,
                       child: ElevatedButton(
                         onPressed:
-                            _isLoading ? null : _authenticateWithFirebase,
+                        _isLoading ? null : _authenticateWithFirebase,
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Color(0xFFF3D48A),
                           foregroundColor: Colors.white,
@@ -381,21 +381,21 @@ class _LoginOriginalFirebaseState extends State<LoginOriginalFirebase> {
                         ),
                         child: _isLoading
                             ? SizedBox(
-                                height: 20,
-                                width: 20,
-                                child: CircularProgressIndicator(
-                                  color: Colors.white,
-                                  strokeWidth: 2,
-                                ),
-                              )
+                          height: 20,
+                          width: 20,
+                          child: CircularProgressIndicator(
+                            color: Colors.white,
+                            strokeWidth: 2,
+                          ),
+                        )
                             : Text(
-                                _isRegistering ? 'Create Account' : 'Sign In',
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
-                                  letterSpacing: 0.5,
-                                ),
-                              ),
+                          _isRegistering ? 'Create Account' : 'Sign In',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            letterSpacing: 0.5,
+                          ),
+                        ),
                       ),
                     ),
 

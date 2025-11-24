@@ -23,7 +23,7 @@ class _ProfileDetailsState extends State<ProfileDetails> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Profile"),
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Color(0xFFE8C468),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20),
@@ -44,7 +44,7 @@ class _ProfileDetailsState extends State<ProfileDetails> {
                   child: Container(
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Colors.blueAccent,
+                      color: Color(0xFFE8C468),
                     ),
                     padding: const EdgeInsets.all(6),
                     child: const Icon(
@@ -72,7 +72,7 @@ class _ProfileDetailsState extends State<ProfileDetails> {
             // Contact Info
             Card(
               child: ListTile(
-                leading: const Icon(Icons.phone, color: Colors.blueAccent),
+                leading: const Icon(Icons.phone, color: Color(0xFFE8C468)),
                 title: const Text("9876543210"),
               ),
             ),
@@ -80,7 +80,7 @@ class _ProfileDetailsState extends State<ProfileDetails> {
               child: ListTile(
                 leading: const Icon(
                   Icons.location_on,
-                  color: Colors.blueAccent,
+                  color: Color(0xFFE8C468),
                 ),
                 title: const Text("Bangalore, India"),
               ),
@@ -100,14 +100,14 @@ class _ProfileDetailsState extends State<ProfileDetails> {
             // Settings + Logout
             Card(
               child: ListTile(
-                leading: const Icon(Icons.settings, color: Colors.blueAccent),
+                leading: const Icon(Icons.settings, color: Color(0xFFE8C468)),
                 title: const Text("Settings"),
                 onTap: () {},
               ),
             ),
             Card(
               child: ListTile(
-                leading: const Icon(Icons.logout, color: Colors.red),
+                leading: const Icon(Icons.logout, color: Color(0xFFE8C468)),
                 title: const Text("Logout"),
                 onTap: () {
                   Navigator.pushReplacement(
@@ -147,7 +147,7 @@ class _ProfileDetailsState extends State<ProfileDetails> {
           }
         },
         selectedItemColor:
-            Colors.redAccent, // Set the color for the selected item
+            Color(0xFFE8C468), // Set the color for the selected item
         unselectedItemColor:
             Colors.grey, // Set the color for the unselected items
         items: [

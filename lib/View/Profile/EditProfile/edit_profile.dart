@@ -68,7 +68,7 @@ class EditProfile extends StatelessWidget {
                             label: Text('Update Profile Picture',
                                 style: TextStyle(color: Colors.white)),
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: Colors.blueAccent,
+                              backgroundColor: Color(0xFFE8C468),
                               padding: EdgeInsets.symmetric(
                                   vertical: 2.0.h, horizontal: 10.0.w),
                               shape: RoundedRectangleBorder(),

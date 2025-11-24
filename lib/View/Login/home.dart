@@ -98,7 +98,7 @@ class _LoginHomeState extends State<LoginHome>
                   child: Text(
                     "Connecting Hearts, Joining Lives",
                     style: TextStyle(
-                      color: const Color.fromARGB(223, 241, 214, 214),
+                      color: const Color(0xFFF3D48A),
                       height: 1.2,
                       fontSize: 40,
                       fontWeight: FontWeight.w900,
@@ -123,7 +123,7 @@ class _LoginHomeState extends State<LoginHome>
                         child: Container(
                           height: 50,
                           decoration: BoxDecoration(
-                            color: const Color.fromARGB(223, 241, 214, 214),
+                            color: const Color(0xFFE6CB8A),
                             borderRadius: BorderRadius.circular(50),
                           ),
                           child: Center(
@@ -159,7 +159,7 @@ class _LoginHomeState extends State<LoginHome>
                         child: Container(
                           height: 50,
                           decoration: BoxDecoration(
-                            color: const Color.fromARGB(223, 241, 214, 214),
+                            color: const Color(0xFFE6CB8A),
                             borderRadius: BorderRadius.circular(50),
                           ),
                           child: Center(

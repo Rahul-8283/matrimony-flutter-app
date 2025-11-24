@@ -84,8 +84,8 @@ class MyApp extends StatelessWidget {
             return GetMaterialApp(
               title: "Bright Weddings",
               theme: ThemeData(
-                colorScheme: ColorScheme.fromSeed(seedColor: Color(0xFFF3D48A)),
-                primaryColor: Color(0xFFF3D48A),
+                colorScheme: ColorScheme.fromSeed(seedColor: Color(0xFFE6CB8A)),
+                primaryColor: Color(0xFFE8C468),
               ),
               routes: {
                 '/': (context) => LoginHome(),
