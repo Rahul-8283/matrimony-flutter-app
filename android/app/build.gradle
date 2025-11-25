@@ -7,13 +7,13 @@ plugins {
 
 android {
     namespace "com.example.bright_weddings"
-    compileSdk 34
+    compileSdk 36
     ndkVersion flutter.ndkVersion
 
     defaultConfig {
         applicationId "com.liten.mmmatrimony"
         minSdk 28
-        targetSdk 28
+        targetSdk 33 // which i modified from 28 to 33
         versionCode flutter.versionCode
         versionName flutter.versionName
         multiDexEnabled true
