@@ -1,1 +1,6 @@
 .vercel
+.dart_tool
+.idea
+.idx
+.vscode
+.firebase
